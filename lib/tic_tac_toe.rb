@@ -97,9 +97,9 @@ class TicTacToe
     @board.none?{|position| position == " "}
   end
   
-  def draw?(board)
-    if won?(board) == false
-      if full?(board) == true
+  def draw?
+    if won? == false
+      if full? == true
         true
       else
         false
